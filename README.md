@@ -18,4 +18,4 @@ For using Web3Auth natively in Android, Web3Auth provides an Android SDK written
 It returns a private key generated in a non-custodial way on successful user authentication. 
 This authentication can be achieved by using any social login options that Web3Auth supports or using a custom authentication flow of your choice.
 
-
+<video src="https://user-images.githubusercontent.com/3600906/221755716-97cfc465-4166-4633-bbac-c9b80d7307d3.mp4" />
