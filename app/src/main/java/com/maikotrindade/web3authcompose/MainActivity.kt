@@ -1,5 +1,6 @@
 package com.maikotrindade.web3authcompose
 
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,10 +12,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.maikotrindade.web3authcompose.ui.theme.Web3AuthComposeTheme
+import com.web3auth.core.Web3Auth
+import com.web3auth.core.types.Web3AuthOptions
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var web3Auth: Web3Auth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        web3AuthSetup()
+
         setContent {
             Web3AuthComposeTheme {
                 Surface(
@@ -25,5 +33,8 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    private fun web3AuthSetup() {
     }
 }
